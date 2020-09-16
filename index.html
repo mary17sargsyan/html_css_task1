@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="leftnav.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <div id="header">
+        <img class="logo" src="./img/logo.png" alt="Company name" />
+        <div class="header">
+            <div id="e1">
+                <div>
+                    <span class="notification"> <img class="img1" src="img/002-international-connection.png"></span>
+                    <span class="notification"> <img class="img notification" src="img/001-notification.png"> <span class="badge"> </span></span>
+
+                </div>
+            </div>
+
+                <div id="2">
+                    <div class="forProgressBar">
+                        <div id="progressbar"></div><br>
+                        <p id="progresBarText"> </p>
+                    </div>
+                </div>
+
+            <div >
+                <div>
+                    <span class="span"> User Name  </span>
+                    <span class="material-icons" style="color: dimgrey">keyboard_arrow_down</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="leftnav">
+            <ul class="menuVertical">
+
+                    <select class="selectLeftNav">
+                        <option>
+                             LeanGoFinanace.com
+                        </option>
+                        <option>
+                          1
+                        </option>
+                        <option>
+                            2
+                        </option>
+                        <option>
+                            3
+                        </option>
+                        <option>
+                           4
+                        </option>
+                    </select>
+
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/003-dashboard.png"> Dashborad </span> </a>
+                </li>
+                <hr/>
+                <br>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/005-contract.png"> Create Notification </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/004-statistics.png"> Reports </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/006-chat.png"> Sent Notifications </span> </a>
+                </li>
+                <hr/>
+                <br>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/007-sent-mail.png"> Campaigns </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/008-business-affiliate-network.png"> AB Testing </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/009-support.png"> Custom Opt-In </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/010-calendar.png"> Scheduied Notifications </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/011-rss-symbol.png"> RSS Auto Push </span> </a>
+                </li>
+                <hr/>
+                <br>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/012-family-tree.png"> Segments </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/013-configuration-gears.png"> Configuration </span> </a>
+                </li>
+                <li>
+                    <a href="#"> <span class="iconsLeftNav"><img class="pngIcons" src="img/014-multiple-users-silhouette.png"> Users List </span> </a>
+                </li>
+
+            </ul>
+
+
+    </div>
+    <div class="content">
+    <div class="firstContent">
+        <h2>Settings <span class="dot1"> <img class="info" src="img/info.png"></span> </h2>
+        <ul class="littleMenu">
+            <li id="settings" class="lm">
+                Account Settings
+            </li>
+            <li id="autentication" class="lm">
+                2 Step Autentication
+            </li>
+            <li ac id="importExport" class="lm" >
+                Import/Export Subscriber
+            </li>
+        </ul>
+        <div class="contentBody">
+            <div id="importExportBody">
+                <div class="text">
+                    <div class="subscriber">
+                        <b> Import Subscriber </b>
+                    </div>
+
+                    <p>Add subscribers to this site using a CSV file.</p>
+                    <p>Your CSV file should contain the following information for each subscriber:<br>
+                        Subscription_ID | Created_Time_Stamp | Platform | Browser | Version | Region.</p>
+                    <p>It is possible to export your WebPush subscribers from one account and import them into ano-
+                        ther WebPush account. To successfully import subscribers, you will need to use the same Fire-
+                        base API Key and Sender ID for both accounts.</p>
+                    <p>
+                        <span class="selectSize"> <img src="img/cloud-backup-up-arrow.png"></span><span class="selectSize"> Select CSV File </span>
+                    </p>
+                </div>
+                <div class="buttonDiv">
+                    <button class="buttonContent"> Import CSV </button>
+                </div>
+
+                <div class="text">
+                    <div class="subscriber">
+                        <b> Export Subscriber </b>
+                    </div>
+
+                    <p>Export your subscribers into a downloadable CSV file.</p>
+                    <p>
+                        Your CSV file will contain the following subscriber data: <br>
+                        Subscription_ID | Created_Time_Stamp | Platform | Browser | Version | Region</p>
+
+                </div>
+                <div class="buttonDiv">
+                    <button class="buttonContent"> Export Download </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="secondContent">
+
+            <ul class="littleMenu" style="margin-top: 21%">
+                <li id="firebaseSettings" class="lm" style="width: 100%">
+                    Firebase Settings
+                </li>
+            </ul>
+            <div class="contentBody">
+
+                <div class="text">
+
+                    <p style="padding-top: 4%;">
+
+                        We recommend entering your own Firebase API Key, though it is not required. If you do not enter a key, you will be added to ours and will be unable to export subscribers. Those using a personalized Firebase API Key can export subscribers at any time.
+                    </p>
+                    <p>
+                        If you do not currently have a Firebase API Key, it is easy to <span class="colorChange">register</span>.
+                    </p>
+                    <p >  Read our <span class="colorChange">instructions </span> on how to set up Firebase keys for Adrack WebPush.</p>
+
+                    </p>
+                    <div class="frSettings">
+                        <p class="colorChange"> Firebase API Key </p>
+                    </div>
+                    <div class="frSettings">
+                        <p class="colorChange"> Firebase Sender ID </p>
+                    </div>
+                </div>
+                <div class="buttonDiv">
+                    <button class="buttonContent"> Save Settings </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let value=500;
+        let maxValue=2000;
+        let notification=true;
+        $( function() {
+            $("#progressbar").progressbar({
+                max: maxValue,
+                value: value,
+            });
+            $("#progresBarText" ).text( value+" of "+maxValue+" subscriters ");
+            if(notification){
+                $(".badge").css("display", "block");
+            }else{
+                $(".badge").css("display", "none");
+            }
+        } );
+    </script>
+</body>
+</html>
+
